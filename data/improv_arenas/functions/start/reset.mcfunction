@@ -1,36 +1,42 @@
 # reset players + creative mode
-execute at @e[tag=pvp_lobby,limit=1] run function sarex_pvp:structures/save_terrain
-execute at @e[tag=pvp_lobby,limit=1] run function sarex_pvp:structures/load_lobby
-schedule function sarex_pvp:start/return 1s
+execute at @e[tag=iarena_lobby,limit=1] run function improv_arenas:structures/save_terrain
+execute at @e[tag=iarena_lobby,limit=1] run function improv_arenas:structures/load_lobby
+schedule function improv_arenas:start/return 5t
 gamemode creative @a
+effect clear @a
 
 # reset scores
-scoreboard players set round_in_progress misc 0
+scoreboard players set round_in_progress iarena_var 0
 tag @a remove ready
 tag @a remove has_items
-scoreboard players set @a pvp_sneak 0
+scoreboard players set @a iarena_sneak 0
 
 # add scoreboard objectives again
-scoreboard objectives add pvp_sneak minecraft.custom:minecraft.sneak_time
-scoreboard objectives add pvp_walk minecraft.custom:minecraft.walk_one_cm
-scoreboard objectives add pvp_sprint minecraft.custom:minecraft.sprint_one_cm
+function improv_arenas:load/load_move_stats
+
+scoreboard objectives setdisplay sidebar iarena_points
 
 # pause timer again
-scoreboard players set pause timer 1
-scoreboard players set global timer 2400
-scoreboard players add round misc 1 
+scoreboard players set pause iarena_timer 1
+scoreboard players set global iarena_timer 2400
+scoreboard players add round iarena_var 1
 
 # hide bossbar
-bossbar set sarex_pvp:round_timer visible false
+bossbar set improv_arenas:round_timer visible false
 
-# points + underdog bonus
-scoreboard players add @a points 1
-#execute unless score underdog_threshold cvar matches 0 run function sarex_pvp:features/underdog
-execute unless score underdog_threshold cvar matches 0 run function sarex_pvp:features/underdog2
+# points
+scoreboard players add @a iarena_points 1
+
+# underdog benefit (reset)
+scoreboard players operation reset_value iarena_var = round iarena_var
+scoreboard players remove reset_value iarena_var 1
+function improv_arenas:features/underdog_reset
 
 # give book + clear inv
 clear @a[distance=..128]
-function sarex_pvp:give_book
+function improv_arenas:give_book
+
+gamerule doFireTick false
 
 # reset world border
 worldborder set 96

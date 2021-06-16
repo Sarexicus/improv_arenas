@@ -1,3 +1,5 @@
+#> improv_arenas:util/clear_enderchest
+
 replaceitem entity @s enderchest.0 air
 replaceitem entity @s enderchest.1 air
 replaceitem entity @s enderchest.2 air
