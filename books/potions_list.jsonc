@@ -4,7 +4,7 @@
       "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"2 points\"},{\"text\":\"\\n------\\nspeed\\njump boost II\\n[E] slow falling\\n[S] weakness\\n[S] slowness\"}],\"text\":\"\"}",
       "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"3 points\"},{\"text\":\"\\n------\\nfire resistance\\nhealing\\nregeneration\\nstrength\\nspeed II\\n[S] weakness II\\n[S] harming\\n[S] slowness II\"}],\"text\":\"\"}",
       "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"4 points\"},{\"text\":\"\\n------\\nturtle master\\nhealing II\\nregeneration II\\nstrength II\\n[S] poison\\n[S] healing\\n[S] fire resistance\\n[S] regeneration\\n[S] harming II\"}],\"text\":\"\"}",
-      "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"5 points\"},{\"text\":\"\\n------\\ninvisibility\\nturtle master II\\n[S] turtle master\\n[S] healing II\\n[S] regeneration II\\n[S] strength II\\n[S] poison II\"}],\"text\":\"\"}"
+      "{\"extra\":[{\"color\":\"dark_gray\",\"text\":\"5 points\"},{\"text\":\"\\n------\\n[S] turtle master\\n[S] healing II\\n[S] regeneration II\\n[S] strength II\\n[S] poison II\"}],\"text\":\"\"}"
     ],
     "title": "Potion Costs",
     "author": "Sarexicus"
