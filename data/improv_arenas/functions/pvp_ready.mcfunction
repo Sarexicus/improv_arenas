@@ -11,8 +11,8 @@ tag @a[scores={iarena_sneak=..29},tag=ready] remove ready
 effect clear @a[tag=!ready] glowing
 
 # reset sneak score if moved
-scoreboard players set @a[scores={iarena_walk=20..}] iarena_sneak 0
-scoreboard players set @a[scores={iarena_walk=20..}] iarena_walk 0
+#scoreboard players set @a[scores={iarena_walk=20..}] iarena_sneak 0
+#scoreboard players set @a[scores={iarena_walk=20..}] iarena_walk 0
 scoreboard players set @a[scores={iarena_sprint=5..}] iarena_sneak 0
 scoreboard players set @a[scores={iarena_sprint=5..}] iarena_sprint 0
 

@@ -1,0 +1,152 @@
+// {
+//     "pages": ['[
+//             "",
+//             {
+//                 "text": "PVP Price List",
+//                 "bold": true
+//             },
+//             {
+//                 "text":"\\n--------\\n[To mark yourself as ready, hold crouch and don\'t move]\\n\\n",
+//                 "color": "reset"
+//             },
+//             {
+//                 "text": "Instructions",
+//                 "underlined": true
+//             },
+//             {
+//                 "text": "\\nSee Page 11",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "0 points",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\nleather armor (2 pc)\\nwooden tools (x1 tool)\\n\\nfire charge (x2)\\nleaves (x6)\\nladder (x16)\\nscaffolding (x8)\\n\\nbaked potato (x1)\\ndried kelp (x8)\\ncake",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "1 point",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\nchain/gold armor(2pc)\\ngold tools (x2 tools)\\nstone tools (x3 tools)\\nsteak (x2)\\nTNT (x4)\\nchorus fruit (x4)\\n\\n",
+//                 "color": "reset"
+//             },
+//             {
+//                 "text": "\\n..and everything else\\nnot in this book (x1)",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "2 points",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\ncobweb (x4)\\nlava bucket\\nfirework (x2)\\nsnowball (x32)\\nbow\\niron armor (2 pcs)\\niron tools (x1 tool)\\n\\ngolden apple (normal)\\nender pearl\\nrespawn anchor\\n ",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "3 points",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\nelytra\\nwool (x32)\\nshield\\ncrossbow\\n\\n ",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "4 points",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\ndiamond armor (2 pc)\\ntotem of undying\\ntrident\\n\\nconcrete (x16)",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "5 points",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\ndiamond tools (x1 tool)\\nnetherite armor (2pc)",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "6 points",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\nnetherite tool (x1 tool)",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "misc.",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\npotions: see book\\narrows: see book\\nench. books: see book\\n ",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "banned",
+//                 "color": "dark_gray"
+//             },
+//             {
+//                 "text": "\\n--------\\nwither skeleton skulls\\nblocks of metal/gems\\ngolden apple (ench.)\\nspawn eggs\\nend portal frames\\n",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "Instructions\\n------------",
+//                 "bold": true
+//             },
+//             {
+//                 "text": "\\nAfter every round, every player gets a point.\\nYou may only buy ",
+//                 "color": "reset"
+//             },
+//             {
+//                 "text": "one item ",
+//                 "bold": true
+//             },
+//             {
+//                 "text": "per round\\n(put it in your ender chest from your creative inventory to \\"buy\\" it, then spend the point by right-clicking the \\"Spend Point\\" sign)",
+//                 "color": "reset"
+//             }
+//         ]','[
+//             "",
+//             {
+//                 "text": "Instructions\\n(cont.)\\n------------",
+//                 "bold": true
+//             },
+//             {
+//                 "text": "\\nIf you die to a non-player source, you gain no points next round.\\n\\n",
+//                 "color": "reset"
+//             },
+//             {
+//                 "text": "Selling",
+//                 "underlined": true
+//             },
+//             {
+//                 "text": "\\nYou may sell as many items as you want in one round for half their buying price (round up)\\n ",
+//                 "color": "reset"
+//             }
+//         ]'
+//     ],"title": "PVP Price List","author":"Sarexicus"
+// }

@@ -6,6 +6,9 @@ execute as @a unless score @s iarena_changep matches 0 run scoreboard players se
 scoreboard players enable @a iarena_changep
 scoreboard players set @a[scores={iarena_points=..-1}] iarena_points 0
 
+# titles
+title @a actionbar ["",{"text":"⚔ ","color":"green"},{"text":"Round ","bold":true,"color":"white"},{"score":{"name":"round","objective":"iarena_var"},"bold":true,"color":"white"},{"text":" ⚔","color":"green"}]
+
 # team joining
 execute as @a[scores={iarena_teamT=0..}] run function improv_arenas:team_change
 #execute as @a unless score @s iarena_teamT matches 0.. run scoreboard players set @s iarena_teamT -1

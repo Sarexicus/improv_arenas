@@ -27,4 +27,13 @@ bossbar set improv_arenas:round_timer visible true
 worldborder set 16
 scoreboard players operation set_border iarena_var = border_size iarena_cvar
 scoreboard players set modify_border iarena_var 1
+
+# worldborder movement (armor stands)
+execute as @e[tag=iarena_lobby] at @s run summon armor_stand ~ 250 ~ {Tags:["iarena_newcenter"],NoGravity:1b,Invisible:1b}
+
+execute as @e[tag=iarena_lobby] at @s run spreadplayers ~ ~ 48 48 false @e[tag=iarena_newcenter]
+execute as @e[tag=iarena_newcenter] at @s run tp @s ~ 250 ~
+
+
+# border movement in 5s
 schedule function improv_arenas:start/border 5s

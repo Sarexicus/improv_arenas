@@ -1,0 +1,13 @@
+{
+    "pages": [
+        "{\"extra\":[{\"bold\":true,\"text\":\"Books Price List\"},{\"text\":\"\\n--------\\nNote: written based on levels.\\n\\ne.g.\\n\\\"Unbreaking 0∙ 1∙ ◆\\\"\\nmeans Unbreaking I costs 0, II costs 1, etc.\\n\\n'◆': cannot buy\\n'✘': fully banned\"}],\"text\":\"\"}",
+        "{\"text\":\"Aqua Affinity\\n1\\nBane of Arthropods\\n0∙ 0∙ 1∙ 1∙ 1\\nBlast Protection\\n0∙ 1∙ 2∙ ◆\\nChanneling\\n2\\nCleaving\\n1∙ 2∙ ◆\\nDepth Strider\\n0∙ 1∙ 2\"}",
+        "{\"text\":\"Efficiency\\n0∙ 1∙ 2∙ 3∙ 4\\nFeather Falling\\n0∙ 1∙ 2∙ 3\\nFire Aspect\\n3∙ ◆\\nFire Protection\\n0∙ 1∙ 2∙ ◆\\nFlame\\n5\\nFortune\\n0∙ 0∙ 1\\n \"}",
+        "{\"text\":\"Frost Walker\\n2∙ ◆\\nImpaling\\n0∙ 1∙ 2∙ ◆∙ ◆\\nInfinity\\n✘\\nKnockback\\n1∙ 3\\nLooting\\n0∙ 1∙ 2\\nLoyalty\\n2∙ 3∙ 4\"}",
+        "{\"text\":\"Luck of the Sea\\n0∙ 1∙ 1\\nLure\\n0∙ 1∙ 1\\nMending\\n0\\nMultishot\\n5\\nPiercing\\n4∙ 4∙ 5∙ 5\\nPower\\n3∙ ◆∙ ◆∙ ✘∙ ✘\\n \"}",
+        "{\"text\":\"Projectile Protection\\n0∙ 1∙ 2∙ ◆\\nProtection\\n1∙ 2∙ 3∙ ◆\\nPunch\\n2∙ ◆\\nQuick Charge\\n1∙ 2∙ ◆\\nRespiration\\n0∙ 1∙ 2\\nRiptide\\n2∙ 3∙ ◆\\n \"}",
+        "{\"text\":\"Sharpness\\n0∙ 1∙ 2∙ ◆∙ ◆\\nSilk Touch\\n0\\nSmite\\n0∙ 0∙ 1∙ 1∙ 1\\nSoul Speed\\n0∙ 1∙ ◆\\nSweeping Edge\\n0∙ 1∙ ◆\\nThorns\\n1∙ 2∙ ◆\\nUnbreaking\\n0∙ 1∙ ◆\\n \"}"
+    ],
+    "title": "Enchanted Book Costs",
+    "author": "Sarexicus"
+}

@@ -17,3 +17,7 @@ bossbar set improv_arenas:round_timer name [{"text":"Round ","color":"white","bo
 execute if score rounded iarena_timer matches 60 run bossbar set improv_arenas:round_timer color yellow
 execute if score rounded iarena_timer matches 30 run bossbar set improv_arenas:round_timer color red
 
+# center movement
+execute as @e[tag=iarena_center] at @s if entity @e[tag=iarena_newcenter,distance=..0.1] run kill @s
+execute as @e[tag=iarena_center] at @s facing entity @e[tag=iarena_newcenter,limit=1] feet run tp @s ^ ^ ^0.005
+execute as @e[tag=iarena_center] at @s run worldborder center ~ ~

@@ -30,8 +30,11 @@ execute as @a unless entity @s[scores={points=0..}] run scoreboard players set @
 scoreboard objectives add iarena_changep trigger 
 scoreboard objectives add iarena_teamT trigger
 
+# underdog
 scoreboard objectives add iarena_temp dummy
 scoreboard objectives add iarena_resetp trigger "Point Reset"
+scoreboard objectives add iarena_resetv dummy "Reset Value"
+scoreboard objectives add iarena_suicides dummy
 
 # kill/death check
 scoreboard objectives add iarena_deathT deathCount
@@ -44,9 +47,11 @@ bossbar set improv_arenas:round_timer style notched_12
 bossbar set improv_arenas:round_timer color green
 bossbar set improv_arenas:round_timer max 2400
 
-# extra features
+# set default cvars
 scoreboard players set border_time iarena_cvar 3
 scoreboard players set border_size iarena_cvar 96
+scoreboard players set underdog_threshold iarena_cvar 3
+scoreboard players set keepTeams iarena_cvar 1
 
 scoreboard objectives add iarena_hasShield dummy
 

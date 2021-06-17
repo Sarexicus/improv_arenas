@@ -1,3 +1,6 @@
+#> improv_arenas:setup
+#> context: player who clicked "Spawn Arena"
+
 # set world border + spawn arena + save old terrain
 worldborder center ~ ~
 summon item_frame ~ ~ ~
@@ -36,7 +39,14 @@ function improv_arenas:give_book
 # reset stats
 scoreboard players set @a iarena_points 0
 scoreboard players set @a iarena_kills 0
+scoreboard players set @a iarena_suicides 0
+
 scoreboard objectives setdisplay sidebar iarena_points
 scoreboard players set round_in_progress iarena_var 0
 scoreboard players set pause iarena_timer 0
 scoreboard players set round iarena_var 1 
+
+
+# global teleport
+gamemode creative @a
+tp @a @s
