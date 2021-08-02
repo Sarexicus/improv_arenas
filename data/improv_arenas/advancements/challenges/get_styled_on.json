@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:gold_ingot"
+      },
+      "title": "Get Styled On",
+      "description": "While wearing full golden armor, slay a player using a golden tool",
+      "frame": "task"
+    },
+    "parent": "improv_arenas:challenges/slept_on",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "item": "minecraft:golden_helmet"
+              },
+              "chest": {
+                "item": "minecraft:golden_chestplate"
+              },
+              "legs": {
+                "item": "minecraft:golden_leggings"
+              },
+              "feet": {
+                "item": "minecraft:golden_boots"
+              },
+              "mainhand": {
+                "tag": "improv_arenas:golden_tools"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

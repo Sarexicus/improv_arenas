@@ -2,7 +2,12 @@
 
 # set to survival, removing any contraband
 clear @a[distance=..128]
-gamemode survival @a
+
+# set everyone's gamemode without the "Your gamemode was updated" message
+gamerule sendCommandFeedback false
+gamemode survival @a[team=!iarena_spectator]
+gamemode spectator @a[team=iarena_spectator]
+gamerule sendCommandFeedback true
 
 data remove storage improv_arenas:storage PlayersAlive
 

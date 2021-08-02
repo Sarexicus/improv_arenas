@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": "Diamond Hands",
+        "description": "Reach 10 points without resetting or spending any points",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "improv_arenas:challenges/potato_hoarder",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

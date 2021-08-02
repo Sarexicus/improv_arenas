@@ -1,7 +1,7 @@
 #> improv_arenas:arena_tick
 
 # spectating / win condition
-execute if score round_in_progress iarena_var matches 1 run function improv_arenas:test_win
+#execute if score round_in_progress iarena_var matches 1 run function improv_arenas:test_win
 
 # iarena_timer
 execute unless score pause iarena_timer matches 1 unless score global iarena_timer matches 0 run scoreboard players remove global iarena_timer 1
@@ -21,3 +21,6 @@ execute if score rounded iarena_timer matches 30 run bossbar set improv_arenas:r
 execute as @e[tag=iarena_center] at @s if entity @e[tag=iarena_newcenter,distance=..0.1] run kill @s
 execute as @e[tag=iarena_center] at @s facing entity @e[tag=iarena_newcenter,limit=1] feet run tp @s ^ ^ ^0.005
 execute as @e[tag=iarena_center] at @s run worldborder center ~ ~
+
+#execute as @a[team=iarena_spectator,tag=!spectating] if entity @a[distance=..0.01,team=!iarena_spectator] run tag @s add spectating
+#execute as @a[team=iarena_spectator,tag=spectating] unless entity @a[distance=..0.01,team=!iarena_spectator] run tag @s remove spectating

@@ -1,6 +1,7 @@
 #> improv_arenas:lobby_tick
 
 # change points (use/refund)
+execute as @a unless score @s iarena_changep matches 0 run tag @s add ia_spentpoint
 execute as @a unless score @s iarena_changep matches 0 run scoreboard players operation @s iarena_points += @s iarena_changep
 execute as @a unless score @s iarena_changep matches 0 run scoreboard players set @s iarena_changep 0
 scoreboard players enable @a iarena_changep
@@ -20,4 +21,4 @@ scoreboard players reset @e[scores={iarena_resetp=1..}] iarena_resetp
 
 
 # check ready
-function improv_arenas:pvp_ready
+function improv_arenas:lobby_readycheck

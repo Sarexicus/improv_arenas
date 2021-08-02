@@ -1,0 +1,37 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:leather_boots",
+        "nbt": "{display:{color:11546150}}"
+      },
+      "title": "The Drip™",
+      "description": "While wearing only red-dyed leather boots, slay a player",
+      "frame": "challenge"
+    },
+    "parent": "improv_arenas:challenges/get_styled_on",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "feet": {
+                "item": "minecraft:leather_boots",
+                "nbt": "{display:{color:11546150}}"
+              },
+              "head": {
+                "item": "minecraft:air"
+              },
+              "chest": {
+                "item": "minecraft:air"
+              },
+              "legs": {
+                "item": "minecraft:air"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

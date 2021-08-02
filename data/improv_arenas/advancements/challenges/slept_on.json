@@ -1,0 +1,16 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:red_bed"
+      },
+      "title": "Get Slept On",
+      "description": "Sleep in a bed mid-arena near at least 1 enemy player"
+    },
+    "parent": "improv_arenas:challenges/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

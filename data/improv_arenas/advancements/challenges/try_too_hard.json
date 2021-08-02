@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stick"
+      },
+      "title": "Try(too)hard",
+      "description": "Break your weapon"
+    },
+    "parent": "improv_arenas:challenges/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_durability_changed",
+        "conditions": {
+          "durability": 0,
+          "item": {
+            "tag": "improv_arenas:weapons"
+          }
+        }
+      }
+    }
+  }
+  

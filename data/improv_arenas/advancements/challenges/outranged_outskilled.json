@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_hoe"
+        },
+        "title": "Outranged, Outskilled",
+        "description": "Using a hoe, slay an axe-wielding player"
+    },
+    "parent": "improv_arenas:challenges/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "tag": "improv_arenas:hoes"
+                        }
+                    }
+                },
+                "entity": {
+                    "type": "minecraft:player",
+                    "equipment": {
+                        "mainhand": {
+                            "tag": "improv_arenas:axes"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+#> improv_arenas:start/teleport
+
 # make worldborder large enough as a default
 worldborder set 96
 
@@ -5,8 +7,8 @@ worldborder set 96
 execute unless score keepTeams iarena_cvar matches 1 run spreadplayers ~ ~ 32 40 false @a 
 
 # if the "keepTeams" cvar *is* set, then check to see if there are players not on teams, and if so, don't respect it
-execute if score keepTeams iarena_cvar matches 1 unless entity @a[team=] run spreadplayers ~ ~ 32 40 true @a 
-execute if score keepTeams iarena_cvar matches 1 if entity @a[team=] run spreadplayers ~ ~ 32 40 false @a 
+execute if score keepTeams iarena_cvar matches 1 unless entity @a[team=] run spreadplayers ~ ~ 32 40 true @a[team=!iarena_spectator]
+execute if score keepTeams iarena_cvar matches 1 if entity @a[team=] run spreadplayers ~ ~ 32 40 false @a[team=!iarena_spectator]
 
 # keeps players from sticking in each other
 execute as @a at @s run spreadplayers ~ ~ 2 2 false @s
@@ -24,7 +26,6 @@ bossbar set improv_arenas:round_timer players @a
 bossbar set improv_arenas:round_timer visible true
 
 # start the worldborder
-worldborder set 16
 scoreboard players operation set_border iarena_var = border_size iarena_cvar
 scoreboard players set modify_border iarena_var 1
 
@@ -34,6 +35,7 @@ execute as @e[tag=iarena_lobby] at @s run summon armor_stand ~ 250 ~ {Tags:["iar
 execute as @e[tag=iarena_lobby] at @s run spreadplayers ~ ~ 48 48 false @e[tag=iarena_newcenter]
 execute as @e[tag=iarena_newcenter] at @s run tp @s ~ 250 ~
 
-
 # border movement in 5s
 schedule function improv_arenas:start/border 5s
+
+function improv_arenas:test_win

@@ -1,0 +1,12 @@
+{
+    "parent": "improv_arenas:challenges/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:slept_in_bed"
+      }
+    },
+    "rewards": {
+      "function": "improv_arenas:advancements/slept_on_check"
+    }
+  }
+  

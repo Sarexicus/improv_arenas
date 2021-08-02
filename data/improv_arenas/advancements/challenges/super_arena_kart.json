@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:minecart"
+        },
+        "title": "Super Arena Kart",
+        "description": "While in a minecart, slay a player",
+        "show_toast": true,
+        "hidden": false
+    },
+    "parent": "improv_arenas:challenges/slept_on",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "vehicle": {
+                        "type": "minecraft:minecart"
+                    }
+                }
+            }
+        }
+    }
+}

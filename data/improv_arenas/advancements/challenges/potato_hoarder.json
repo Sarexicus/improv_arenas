@@ -1,0 +1,32 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:baked_potato"
+      },
+      "title": "Delicious Point Saving",
+      "description": "Buy 10 or more baked potatoes",
+      "frame": "task"
+    },
+    "parent": "improv_arenas:challenges/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "player": {
+              "gamemode": "survival"
+            }
+          },
+          "items": [
+            {
+              "item": "minecraft:baked_potato",
+              "count": {
+                "min": 10
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

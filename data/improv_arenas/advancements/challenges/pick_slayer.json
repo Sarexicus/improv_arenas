@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_pickaxe"
+      },
+      "title": "Best Enchants (Normally)",
+      "description": "Put Mending and Fortune 3 on your pickaxe, and slay someone with it",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "improv_arenas:challenges/plan_b",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "tag": "improv_arenas:pickaxes",
+                "enchantments": [
+                  {
+                    "enchantment": "minecraft:fortune",
+                    "levels": 3
+                  },
+                  {
+                    "enchantment": "minecraft:mending",
+                    "levels": 1
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

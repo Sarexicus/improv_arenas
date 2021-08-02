@@ -1,0 +1,26 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:fishing_rod"
+      },
+      "title": "Going Fishing",
+      "description": "While in a boat, hook a player with a fishing rod"
+    },
+    "parent": "improv_arenas:challenges/slept_on",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:fishing_rod_hooked",
+        "conditions": {
+          "player": {
+            "vehicle": {
+              "type": "minecraft:boat"
+            }
+          },
+          "entity": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    }
+  }
+  

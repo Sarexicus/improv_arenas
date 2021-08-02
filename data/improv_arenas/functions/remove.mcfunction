@@ -14,3 +14,4 @@ team remove iarena_green
 team remove iarena_purple
 team remove iarena_blue
 team remove iarena_red
+team remove iarena_spectator

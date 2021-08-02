@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_sword"
+        },
+        "title": "Super Survivalist",
+        "description": "Win the first round without ever opening your ender chest",
+        "show_toast": true,
+        "hidden": false,
+        "frame": "challenge"
+    },
+    "parent": "improv_arenas:challenges/potato_hoarder",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
